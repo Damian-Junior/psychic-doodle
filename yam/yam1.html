@@ -22,7 +22,7 @@
          
    </div>
 
-   <div class="main_container">
+   <div id="main_container">
         <div class="desc_scetion">
               <h3>Yam</h3>
         <h1>Name of chicken</h1>
@@ -80,13 +80,13 @@
             <li>Sauce</li>
             <li>Water</li>
          </ul>
-         <button type="button">Add to shopping list</button>
+         <button type="button" id="addCart">Add to shopping list</button>
         </div>
 
         <div class="proc">
          <h1>Directions</h1>
          <ol>
-            <li>Put hte soup in te water</li>
+            <li>Put the soup in te water</li>
             <li>Arrange the water in the fire as you like</li>
             <li>Make sure the water is not hot</li>
             <li>Pour your chickned and eat them the way you want</li>
@@ -94,7 +94,32 @@
         </div>
    </div>
    </div>
+     <!--section for order form -->  
+
+  <form id="form">
+      <p style="color:rgb(12,12,12, 0.6);color:orange ; margin-bottom: 20px; font-size:1.2em">Order Summary</p>
+      <label>Name of Chicken</label>
+      <label>Unit Price: <span>15000</span></label>
+      <label>Quantity
+      <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+      </select>
+
+       </label>
+       <label>Total: <span id="total">12000</span></label>
+      <button type="submit" id="submit">Submit</button>
+     
+  </form>
+
+    <div id="submit_response">Summitted Succesful
+      <button type="button" id="ok_button">Ok</button>
+  </div>
+
+<!-- end of section for order form -->
    
- <!-- <script type="text/javascript" src="../res.js" defer="true"></script> -->   
- </body>
+ <script type="text/javascript" src="../foods.js" defer="true"></script> </body>
  </html>

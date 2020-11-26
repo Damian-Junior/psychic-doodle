@@ -100,5 +100,10 @@ navContainer.addEventListener('dblclick', ()=>{
 
 /* end of the code section ofr the nav bar*/ 
 
-/*event for the rebouce of the view button*/
-viewButtom.addEventListener('clcik', ()=> console.log(2121));
+
+
+ /*code section for the addTo shopping list*/
+   
+
+
+/*end of the code section for the add to shopList*/

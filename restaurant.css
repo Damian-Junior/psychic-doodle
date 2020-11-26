@@ -200,7 +200,7 @@ form{
 }
 
 /* style for the foods info page*/
-.main_container{
+#main_container{
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-gap: 2em;
@@ -324,6 +324,96 @@ text-align: justify;
 
 /*end of style for the foods info pages*/
 
+/*the order info page*/
+ #form{
+  position: absolute;
+  top:110%;
+  left:25%;
+  width: 50%;
+  margin:auto;
+  padding:40px;
+  border-radius: 5px;
+  margin-top:40px;
+  display:none;
+  background-color:whitesmoke;
+ 
+}
+form label{
+  display: block;
+  margin-bottom:20px;
+  width: 80%;
+  font-size:2em;
+  padding:20px;
+  margin-right:20px auto;
+  box-shadow: 0px 0px 5px lightgray;
+  color:orange;
+}
+form label:hover{
+  color:white;
+  background-color: orange;
+}
+form  button[type="submit"]{
+  color:orange;
+  font-size:2em;
+  padding:20px;
+  background-color: white;
+  transition:all 0.5s;
+  box-shadow: 0px 0px 5px lightgray;
+  border-radius: 5px;
+  width:50%;
+  margin:auto;
+  border:none;
+  outline:none;
+}
+form button[type="submit"]:hover{
+  color:whitesmoke;
+  background-color: orange;
+}
+
+ #submit_response{
+  position: absolute;
+  top:140%;
+  left:40%;
+  width:20%;
+  margin:auto;
+  color:whitesmoke;
+  font-size:1em;
+  background-color:orange;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px lightgray;
+  border:none;
+  outline:none;
+  padding:20px;
+  margin-bottom: 20px;
+  display: none;
+  
+}
+#ok_button{
+	margin-top: 10px;
+	font-size:0.8em;
+	display: block;
+	padding:10px;
+	border:none;
+	outline:none;
+	margin:auto;
+}
+/*end of the orde form section*/	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width:800px){
 .links{
     text-decoration: none;
@@ -375,7 +465,11 @@ form{
 
 
 @media only screen and (min-width: 300px) and (max-width: 800px){
-
+/*order form section*/
+#submit_response{
+	font-size: 0.5em;
+}
+/*end of the order section*/
   .nav_container{
   display: flex;
   flex-direction: column;
@@ -429,7 +523,7 @@ form{
 
 }
 /*section  for the foood info pages*/
-.main_container{
+#main_container{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -474,5 +568,4 @@ form{
 
 
 }
-
 
