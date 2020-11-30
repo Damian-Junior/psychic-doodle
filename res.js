@@ -22,7 +22,7 @@ formContainer.addEventListener('submit', (event)=>{
 		let genHTML = '';
 
 	 data.filter((choice) =>{
-		if(choice.Food_Type.toLowerCase() == userChoice && userChoice != '')
+		if(choice.Food_Type.toLowerCase() == userChoice.toLowerCase() && userChoice != '')
 		return choice;  // this filter fuction helps to select the file that has the food type that mathceswith user selection and returns the new array
 	}).map((result) =>{
             genHTML += 
@@ -52,7 +52,7 @@ searchInput.addEventListener('keyup', ()=>{
 	let inputValue = searchInput.value;
   autoDiv.innerHTML = '';
   let searchResult = allFoods.filter((element)=>{
-  	return element.toLowerCase().startsWith(inputValue);
+  	return element.toLowerCase().startsWith(inputValue.toLowerCase());
   });
 
     searchResult.forEach((result)=>{
@@ -100,10 +100,33 @@ navContainer.addEventListener('dblclick', ()=>{
 
 /* end of the code section ofr the nav bar*/ 
 
+/*code section ofr te media sceen at max-width 800px */
+document.getElementById('burger').addEventListener('click', ()=>{
+  
+ if(media.matches){
+    let link = document.querySelectorAll('.links');
+        link.forEach((a)=>{
+        a.style.display = 'block';
+      
+      
+  
+    });
+    document.getElementById('burger').innerHTML = '&#10005';  
+   }
+  
+});
 
 
- /*code section for the addTo shopping list*/
-   
+document.getElementById('burger').addEventListener('dblclick', ()=>{
+  if(media.matches){
+    let link = document.querySelectorAll('.links');
+    link.forEach((a)=>{
+      a.style.display = 'none';
+    });
+    document.getElementById('burger').innerHTML = '&#9776;';
+    document.getElementById('burger').style.color = 'tomatoes'; 
+  }
+  
+});
 
-
-/*end of the code section for the add to shopList*/
+/*end of the media screen of the screeen less then 800px*/
