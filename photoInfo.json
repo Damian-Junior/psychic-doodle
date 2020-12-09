@@ -5,7 +5,11 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread1.jpg",
-	"foodUrl": "bread/bread1.html"
+	"foodUrl": "bread/bread1.html",
+	"calory": "12kg",
+    "health_label":"corn Flour, butter, tumeric, nuts",
+    "title":"French Toast"
+
 
 },
 
@@ -14,7 +18,10 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread2.jpg",
-	"foodUrl": "bread/bread2.html"
+	"foodUrl": "bread/bread2.html",
+	"calory": "15kg",
+    "health_label":"corn Flour, butter, tumeric, nuts, egg",
+    "title":"Pudded Bread"
 
 },
 
@@ -23,7 +30,10 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread3.jpg",
-	"foodUrl": "bread/bread3.html"
+	"foodUrl": "bread/bread3.html",
+	"calory": "11kg",
+    "health_label":"corn Flour, butter, tumeric, egg, mangarine",
+    "title":"Knachakapuri"
 
 },
 
@@ -41,7 +51,10 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread5.png",
-	"foodUrl": "bread/bread5.html"
+	"foodUrl": "bread/bread5.html",
+	"calory": "10kg",
+    "health_label":"corn Flour, butter, tumeric, nuts, malipy",
+    "title":"Bruschetta"
 
 },
 
@@ -50,7 +63,10 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread6.jpg",
-	"foodUrl": "bread/bread6.html"
+	"foodUrl": "bread/bread6.html",
+	"calory": "12kg",
+    "health_label":"Wheat Flour, butter, tumeric, ginger, peripersia",
+    "title":"Croquette"
 
 },
 
@@ -59,7 +75,10 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread7.jpg",
-	"foodUrl": "bread/bread7.html"
+	"foodUrl": "bread/bread7.html",
+	"calory": "15kg",
+    "health_label":"Flour, butter, tumeric, nuts, shakespare, egg",
+    "title":"Bunny Chow"
 
 },
 
@@ -68,7 +87,10 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread8.jpg",
-	"foodUrl": "bread/bread8.html"
+	"foodUrl": "bread/bread8.html",
+	"calory": "18kg",
+    "health_label":"Yorn Flour, fabla, tumeric, neglata",
+    "title":"Biskotso"
 
 },
 
@@ -77,7 +99,10 @@
 	"Food_Type": "Bread",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/bread9.jpg",
-	"foodUrl": "bread/bread9.html"
+	"foodUrl": "bread/bread9.html",
+	"calory": "17kg",
+    "health_label":" wheat Flour, butter, lemon_water, nuts",
+    "title":"Acquasale"
 
 },
 
@@ -90,7 +115,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick1.jpg",
-	"foodUrl": "chicken/chicken1.html"
+	"foodUrl": "chicken/chicken1.html",
+	"calory": "9kg",
+    "health_label":"chicken, oil, melip, nuts",
+    "title":"Buldak"
 
 },
 
@@ -99,7 +127,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick2.jpg",
-	"foodUrl": "chicken/chicken2.html"
+	"foodUrl": "chicken/chicken2.html",
+	"calory": "8kg",
+    "health_label":"chicken, oil, melip, nuts, meripersia",
+    "title":"Buldak"
 
 },
 
@@ -108,7 +139,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick3.jpg",
-	"foodUrl": "chicken/chicken3.html"
+	"foodUrl": "chicken/chicken3.html",
+	"calory": "9kg",
+    "health_label":"chicken, oil, melip, nuts, scancsh",
+    "title":"Marinated barbecue"
 
 },
 
@@ -117,7 +151,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick4.jpg",
-	"foodUrl": "chicken/chicken4.html"
+	"foodUrl": "chicken/chicken4.html",
+	"calory": "19kg",
+    "health_label":"chicken, oil, melip, lardons, garlic",
+    "title":" French Buldak"
 
 },
 
@@ -126,7 +163,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick5.jpg",
-	"foodUrl": "chicken/chicken5.html"
+	"foodUrl": "chicken/chicken5.html",
+	"calory": "10kg",
+    "health_label":"chicken, oil, melip,mushroom, coq au vin",
+    "title":"Adobo"
 
 },
 
@@ -135,7 +175,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick6.jpg",
-	"foodUrl": "chicken/chicken6.html"
+	"foodUrl": "chicken/chicken6.html",
+	"calory": "14kg",
+    "health_label":"chicken, oil, melip, mushroom lardons",
+    "title":" Indian Buldak"
 
 },
 
@@ -144,7 +187,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick7.jpg",
-	"foodUrl": "chicken/chicken7.html"
+	"foodUrl": "chicken/chicken7.html",
+	"calory": "17kg",
+    "health_label":"chicken, oil, melip, nuts, malipy",
+    "title":"Bean sprout chicken"
 
 },
 
@@ -153,7 +199,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick8.jpg",
-	"foodUrl": "chicken/chicken8.html"
+	"foodUrl": "chicken/chicken8.html",
+	"calory": "14kg",
+    "health_label":"chicken, oil, melip, nuts",
+    "title":"bon bon chicken"
 
 },
 
@@ -162,7 +211,10 @@
 	"Food_Type": "CHICKEN",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/chick9.jpg",
-	"foodUrl": "chicken/chicken9.html"
+	"foodUrl": "chicken/chicken9.html",
+	"calory": "9kg",
+    "health_label":"chicken, oil, melip, nuts, butter, mangarine",
+    "title":"Butter chicken"
 
 },
 
@@ -176,7 +228,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza1.jpg",
-	"foodUrl": "pizza/pizza1.html"
+	"foodUrl": "pizza/pizza1.html",
+	"calory": "9kg",
+    "health_label":"gam flour, butter, lemon_water, nuts",
+    "title":"Pepperonnik"
 
 },
 
@@ -185,7 +240,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza2.jpg",
-	"foodUrl": "pizza/pizza2.html"
+	"foodUrl": "pizza/pizza2.html",
+	"calory": "10kg",
+    "health_label":"gam flour, butter, lemon_water, nuts",
+    "title":"Paneer pizza"
 
 },
 
@@ -194,7 +252,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza3.jpg",
-	"foodUrl": "pizza/pizza3.html"
+	"foodUrl": "pizza/pizza3.html",
+	"calory": "9kg",
+    "health_label":"gam flour, butter, lemon_water, nuts, rice bran",
+    "title":"wholegrain pizza"
 
 },
 
@@ -203,7 +264,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza4.jpg",
-	"foodUrl": "pizza/pizza4.html"
+	"foodUrl": "pizza/pizza4.html",
+	"calory": "23kg",
+    "health_label":"gam flour, butter, lemon_water, nuts, eggs, mangarine",
+    "title":"Margherita pizza"
 
 },
 
@@ -212,7 +276,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza5.jpg",
-	"foodUrl": "pizza/pizza5.html"
+	"foodUrl": "pizza/pizza5.html",
+	"calory": "9kg",
+    "health_label":"gam flour, butter, lemon_water, nuts, eggs, palinsa",
+    "title":"Scone pizza"
 
 },
 
@@ -221,7 +288,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza6.jpg",
-	"foodUrl": "pizza/pizza6.html"
+	"foodUrl": "pizza/pizza6.html",
+	"calory": "8kg",
+    "health_label":"gam flour, butter, lemon_water, lattuce, spinach",
+    "title":"vegetarian pizza"
 
 },
 
@@ -230,7 +300,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza7.jpg",
-	"foodUrl": "pizza/pizza7.html"
+	"foodUrl": "pizza/pizza7.html",
+	"calory": "13kg",
+    "health_label":"gam flour, butter, lemon_water, nuts, kebab seeds",
+    "title":"kebab pizza"
 
 },
 
@@ -239,7 +312,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza8.jpg",
-	"foodUrl": "pizza/pizza8.html"
+	"foodUrl": "pizza/pizza8.html",
+	"calory": "5kg",
+    "health_label":"chicken , butter,wheat_flour, lemon_water, nuts",
+    "title":"chicken pizza"
 
 },
 
@@ -248,7 +324,10 @@
 	"Food_Type": "PIZZA",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/pizza9.jpg",
-	"foodUrl": "pizza/pizza9.html"
+	"foodUrl": "pizza/pizza9.html",
+	"calory": "9kg",
+    "health_label":"gam flour, butter,wheat_germ, largons, lemon_water, nuts",
+    "title":"Multograin Pizza"
 
 },
 
@@ -271,7 +350,10 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice1.jpg",
-	"foodUrl": "rice/rice1.html"
+	"foodUrl": "rice/rice1.html",
+	"calory": "20kg",
+    "health_label":"Arborio seeds, tumeric, garlic, ginger",
+    "title":"Arborio Rice"
 
 },
 
@@ -280,7 +362,11 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice2.jpg",
-	"foodUrl": "rice/rice2.html"
+	"foodUrl": "rice/rice2.html",
+	"calory": "24kg",
+    "health_label":"Basmati seeds, jasmine, garlic, ginger",
+    "title":"Basmati Rice"
+
 
 },
 
@@ -289,7 +375,11 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice3.jpg",
-	"foodUrl": "rice/rice3.html"
+	"foodUrl": "rice/rice3.html",
+	"calory": "22kg",
+    "health_label":"Sushi seeds, tumeric, calrose, ginger",
+    "title":"Sushi Rice"
+
 
 },
 
@@ -298,7 +388,11 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice4.jpg",
-	"foodUrl": "rice/rice4.html"
+	"foodUrl": "rice/rice4.html",
+	"calory": "10kg",
+    "health_label":"Valencia_prown seeds, nuts, benger, ginger",
+    "title":"Valencia Rice"
+
 
 },
 
@@ -307,7 +401,11 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice5.jpg",
-	"foodUrl": "rice/rice5.html"
+	"foodUrl": "rice/rice5.html",
+	"calory": "20kg",
+    "health_label":"Calrose seeds, tumeric, flavur, ginger",
+    "title":"Calrose Special"
+
 
 },
 
@@ -316,7 +414,11 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice6.jpg",
-	"foodUrl": "rice/rice6.html"
+	"foodUrl": "rice/rice6.html",
+	"calory": "25kg",
+    "health_label":"rice seeds, tumeric, garlic, ginger, onion", 
+    "title":"White Rice"
+
 
 },
 
@@ -325,7 +427,11 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice7.jpg",
-	"foodUrl": "rice/rice7.html"
+	"foodUrl": "rice/rice7.html",
+	"calory": "30kg",
+    "health_label":"cargo seeds, tumeric, onion, ginger",
+    "title":"Reg_cargo Rice"
+     
 
 },
 
@@ -343,7 +449,11 @@
 	"Food_Type": "RICE",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/rice9.jpg",
-	"foodUrl": "rice/rice9.html"
+	"foodUrl": "rice/rice9.html",
+	"calory": "10kg",
+    "health_label":"rice seeds, tumeric, garlic, ginger",
+    "title":"Jamice Rice"
+
 
 },
 
@@ -359,7 +469,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans1.jpg",
-	"foodUrl": "bean/beans1.html"
+	"foodUrl": "bean/beans1.html",
+	"calory": "30kg",
+    "health_label":"beans seed, garlic, tumeric, nuts",
+    "title":"Samba beans"
 
 },
 
@@ -368,7 +481,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans2.jpg",
-	"foodUrl": "bean/beans2.html"
+	"foodUrl": "bean/beans2.html",
+	"calory": "35kg",
+    "health_label":"beans seed, garlic, tumeric, ginger, onion",
+    "title":"Senate beans"
 
 },
 
@@ -377,7 +493,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans3.jpg",
-	"foodUrl": "bean/beans3.html"
+	"foodUrl": "bean/beans3.html",
+	"calory": "17kg",
+    "health_label":"beans seed, garlic, malinga, tumeric, nuts",
+    "title":"Shahan ful"
 },
 
 {
@@ -385,7 +504,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans4.jpg",
-	"foodUrl": "bean/beans4.html"
+	"foodUrl": "bean/beans4.html",
+	"calory": "25kg",
+    "health_label":"beans seed, garlic, tumeric, nuts",
+    "title":"Shiro beans"
 
 },
 
@@ -394,7 +516,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans5.jpg",
-	"foodUrl": "bean/beans5.html"
+	"foodUrl": "bean/beans5.html",
+	"calory": "31kg",
+    "health_label":"beans seed, garlic, tumeric, nuts, atagolo",
+    "title":"Succotash"
 
 },
 
@@ -403,7 +528,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans6.jpg",
-	"foodUrl": "bean/beans6.html"
+	"foodUrl": "bean/beans6.html",
+	"calory": "30kg",
+    "health_label":"beans seed, garlic, tumeric,pea_nuts",
+    "title":"split pea beans"
 
 },
 
@@ -412,7 +540,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans7.jpg",
-	"foodUrl": "bean/beans7.html"
+	"foodUrl": "bean/beans7.html",
+	"calory": "37kg",
+    "health_label":"beans seed, garlic, tumeric, nuts",
+    "title":"beans soup"
 
 },
 
@@ -421,7 +552,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans8.jpg",
-	"foodUrl": "bean/beans8.html"
+	"foodUrl": "bean/beans8.html",
+	"calory": "30kg",
+    "health_label":"beans seed, garlic, tumeric, nuts",
+    "title":"Pinto bean chili"
 
 },
 
@@ -430,7 +564,10 @@
 	"Food_Type": "BEANS",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/beans9.jpg",
-	"foodUrl": "bean/beans9.html"
+	"foodUrl": "bean/beans9.html",
+	"calory": "30kg",
+    "health_label":"beans seed, garlic, tumeric, nuts",
+    "title":"fried beans"
 
 },
 
@@ -448,7 +585,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam1.jpg",
-	"foodUrl": "yam/yam1.html"
+	"foodUrl": "yam/yam1.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -457,7 +597,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam2.jpg",
-	"foodUrl": "yam/yam2.html"
+	"foodUrl": "yam/yam2.html",
+	"calory": "31kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -466,7 +609,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam3.jpg",
-	"foodUrl": "yam/yam3.html"
+	"foodUrl": "yam/yam3.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -475,7 +621,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam4.jpg",
-	"foodUrl": "yam/yam4.html"
+	"foodUrl": "yam/yam4.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -484,7 +633,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam5.jpg",
-	"foodUrl": "yam/yam5.html"
+	"foodUrl": "yam/yam5.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -493,7 +645,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam6.jpg",
-	"foodUrl": "yam/yam6.html"
+	"foodUrl": "yam/yam6.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -502,7 +657,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam7.jpg",
-	"foodUrl": "yam/yam7.html"
+	"foodUrl": "yam/yam7.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -511,7 +669,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam8.jpg",
-	"foodUrl": "yam/yam8.html"
+	"foodUrl": "yam/yam8.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 },
 
@@ -520,7 +681,10 @@
 	"Food_Type": "YAM",
 	"about": "This a nice bread meal good for kids alone",
 	"url": "images/yam9.jpg",
-	"foodUrl": "yam/yam9.html"
+	"foodUrl": "yam/yam9.html",
+	"calory": "30kg",
+    "health_label":"yam, garlic, tumeric, nuts, vegatables",
+    "title":"peper yam"
 
 }
 

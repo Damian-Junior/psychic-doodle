@@ -39,7 +39,19 @@ animation-iteration-count: infinite;
 animation-direction: reverse;
 animation-fill-mode: both;
 }
-
+#slider{
+	width: 100%; 
+	height: 100vh;
+	background-image:url('images/chef2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: fixed; 
+	top:0;
+	z-index: -1000;
+    background-position:center; 
+    background-size: cover; 
+    background-blend-mode: multiply;
+}
 body{
 	background-color:#01020b;
 	z-index: -1000;
@@ -61,11 +73,12 @@ body{
   display: flex;
   margin:auto 10px;
   justify-content: flex-start;
-  border-bottom:  1px solid orange; 
+  /*border-bottom:  1px solid orange;*/ 
 }
 .logo{
   height:3em;
   width:5%;
+  margin-top:20px;
   margin-left:10px;
   margin-right: 0px;
   background-image: url("images/apple_icon.png");
@@ -79,9 +92,8 @@ body{
 }
 
 .links{
- text-decoration:none;
- border-left: 1px solid gray;
- width: 10%;
+  text-decoration:none;
+  width: 10%;
   color:#fff;
   margin: 0px;
   font-size: 1.5em;
@@ -111,29 +123,28 @@ a img{
 form{
 	width: 70%;
 	margin:40px auto;
-	background-color:rgba(12,12,12, 0.6);
-	border-radius: 4px;
+	border-radius: 20px;
 
 	
 }
 
 .autofill div{
 	padding:20px;
-	color:whitesmoke;
+	color:black;
 	font-size:1.1em;
-	border-top:1px solid rgba(2,2,2,0.5);
 }
 .autofill div:hover{
-	background-color: rgba(141, 74, 7, 0.5 );
+	background-color: rgba(0,0,0,.2);
 }
 #search_input{
 	font-size:1.5em;
-	background-color: transparent;
+	background-color:rgba(20,20,20, 0.1);
 	width:100%;
 	outline:none;
 	border:none;
 	padding:20px;
-	color:whitesmoke;
+	color:black;
+	border-radius: 10px;
 }
 
 .food_container{
@@ -160,8 +171,8 @@ form{
 	width:100%;
 	height: 300px;
 	object-fit: cover;
-	box-shadow: 1px 3px 3px darkgray;
-	border-collapse: collapse;
+/*	box-shadow: 1px 3px 3px darkgray;
+*/	border-collapse: collapse;
 
 }
 
@@ -254,7 +265,7 @@ form{
 	width: 100%;
 	padding:20px;
     align-content: center;
-    background-color:#030314;
+    background-color:rgba(9,3,25, 0.5);
 	box-shadow: 1px 2px 3px #ccc;
 
 }
@@ -263,7 +274,7 @@ form{
 	height: 100%;
 	margin-bottom: 10px;
 	margin-right:10px;
-	background-color:#030314;
+	background-color:background-color:rgba(9,3,25, 0.5);;
 	box-shadow: 1px 2px 3px #ccc;
 
 }
@@ -339,9 +350,10 @@ text-align: justify;
 /*the order info page*/
  #form{
   position: absolute;
-  top:110%;
-  left:25%;
-  width: 50%;
+  bottom:-130%;
+  left:30%;
+  width: 30%;
+  height: auto;
   margin:auto;
   padding:40px;
   border-radius: 5px;
@@ -412,7 +424,7 @@ form button[type="submit"]:hover{
 	margin:auto;
 }
 /*end of the orde form section*/	
-#burger{
+.burger{
    color:white;
    font-size: 1.53em; 
    cursor: pointer;
@@ -439,7 +451,6 @@ form button[type="submit"]:hover{
 	color:#fff;
 	padding:20px 20px;
 	font-size: 1.5em;
-	border-left: 1px solid lightgray;
 	transition: background-color 1s;
 	text-shadow: 1px 2px 3px whitesmoke;
 
@@ -457,13 +468,11 @@ form button[type="submit"]:hover{
 form{
 	width: 50%;
 	margin:40px auto;
-	background-color:rgba(12,12,12, 0.6);
-	border-radius: 4px;
 }
 
 .autofill div{
 	padding:20px;
-	color:whitesmoke;
+	color:black;
 	font-size:1.1em;
 }
 
@@ -475,7 +484,7 @@ form{
 	box-sizing: border-box;
 	margin-bottom: 20px;
 	margin-right: 20px;
-	background-color:#030314;
+	background-color:rgba(9,3,25, 0.7);
 	box-shadow: 1px 2px 3px #ccc;
 
 }
@@ -485,11 +494,23 @@ form{
 
 @media only screen and (min-width: 300px) and (max-width: 800px){
 /*order form section*/
-#burger{
+#search_input{
+	font-size:1em;
+}
+#form{
+	height: 50%;
+	font-size:1em;
+	overflow:scroll;
+	left: 10%;
+}
+.burger{
 	display: block;
 }
 #submit_response{
 	font-size: 1em;
+}
+form label, form button[type= 'submit']{
+	font-size:1em;
 }
 /*end of the order section*/
   .nav_container{
@@ -524,14 +545,14 @@ form{
 	min-width: 200px;
 	width: 100%;
 	margin:40px auto;
-	background-color:rgba(12,12,12, 0.6);
-	border-radius: 4px;
+	background-color:rgba(12, 12, 12, 0.6);
+	border-radius:4px;
 }
 
 
 .autofill div{
 	padding:20px;
-	color:whitesmoke;
+	color:black;
 	font-size:1.1em;
 }
 
@@ -539,9 +560,9 @@ form{
 	width:100%;
 	box-sizing: border-box;
 	padding:20px;
-	margin-bottom: 20px;
+	margin-bottom:20px;
 	margin-left:20px;
-	background-color:#030314;
+	background-color:rgba(9,3,25, 0.7);
 	box-shadow: 1px 2px 3px #ccc;
 
 }

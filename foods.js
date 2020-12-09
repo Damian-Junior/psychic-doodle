@@ -7,14 +7,15 @@ let media = window.matchMedia('(min-width: 300px) and (max-width: 800px)');
   document.getElementById('form').style.display = 'block';
   document.getElementById('main_container').style.opacity = '0.3';
   document.getElementById('main_container').style.transform = 'scale(0.9)';
-  /*document.getElementById('main_container').style.backgroundColor = 'rgba(0 , 0, 0, 0.5)';*/
-   window.moveTo(0,0);
+  window.scrollTo(0, 1100);
+
 });
 
 document.getElementById('submit').addEventListener('click', (event)=>{
 	event.preventDefault();
     document.getElementById('submit_response').style.display = 'block';
     document.getElementById('submit').style.transform = 'scale(0.9)';
+    window.scrollTo(0, 0);
 });
 
 document.getElementById('submit_response').addEventListener('click', ()=>{
@@ -29,33 +30,31 @@ selectTag.addEventListener('change', ()=>{
 });
 
 /*code section ofr te media sceen at max-width 800px */
-document.getElementById('burger').addEventListener('click', ()=>{
-	
- if(media.matches){
-	  let link = document.querySelectorAll('.links');
-        link.forEach((a)=>{
-    	  a.style.display = 'block';
-    	  
-    	
-    	
+document.getElementById('show').addEventListener('click', ()=>{
   
+ if(media.matches){
+    let link = document.querySelectorAll('.links');
+        link.forEach((a)=>{
+        a.style.display = 'block';
     });
-    document.getElementById('burger').innerHTML = '&#10005'; 	
-	 }
-	
+    document.getElementById('show').style.display = 'none';
+    document.getElementById('changed').style.display = 'block';  
+   }
+  
 });
 
 
-document.getElementById('burger').addEventListener('dblclick', ()=>{
-	if(media.matches){
-	  let link = document.querySelectorAll('.links');
+document.getElementById('changed').addEventListener('click', ()=>{
+  if(media.matches){
+    let link = document.querySelectorAll('.links');
     link.forEach((a)=>{
-    	a.style.display = 'none';
+      a.style.display = 'none';
     });
-    document.getElementById('burger').innerHTML = '&#9776;';
-    document.getElementById('burger').style.color = 'tomatoes';	
-	}
-	
+    document.getElementById('show').style.display = 'block';
+    document.getElementById('changed').style.display = 'none'; 
+  }
+  
 });
 
 /*end of the media screen of the screeen less then 800px*/
+

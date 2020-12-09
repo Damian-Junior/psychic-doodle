@@ -9,6 +9,7 @@ let foodContainer = document.querySelector('.food_container');
 let index = 0;
 let allFoods = ['chicken', 'bread', 'pizza', 'rice', 'beans', 'yam']; 
 let viewButtom = document.querySelectorAll('.view_button');
+let media = window.matchMedia('(min-width: 300px) and (max-width: 800px)');
 /*end of the varaible declaration*/
 
 
@@ -23,24 +24,27 @@ formContainer.addEventListener('submit', (event)=>{
 
 	 data.filter((choice) =>{
 		if(choice.Food_Type.toLowerCase() == userChoice.toLowerCase() && userChoice != '')
-		return choice;  // this filter fuction helps to select the file that has the food type that mathceswith user selection and returns the new array
-	}).map((result) =>{
+		return choice;      // this filter fuction helps to select the file that has the food type that mathceswith user selection and returns the new array
+
+  }).map((result) =>{
             genHTML += 
             `<div class="foods">
                  <img src="${result.url}" class= "foodimages">
                  <div class="food_info">
-                     <p class="title">This is a recipe</p>
+                     <p class="title">${result.title}</p>
                      <a href="${result.foodUrl}" target="_blank " class="view_button">View recipe</a>
                  </div>
-                 <p class="item_data">Calory: 12kg</p>
+                 <p class="item_data">Calory: ${result.calory}</p>
                  <p class="item_data">Diet_Label: 1</p>
-                 <p class="item_data">Health_Label: Sugar, peanut, vitamins, and all minerals</p>   
+                 <p class="item_data">Health_Label: ${result.health_label}</p>   
              </div>
             `
 		 });
 		 foodContainer.innerHTML = genHTML;
 	      
-		 })
+		 }).catch((error)=>{
+      alert('food not found: Reason:'+ error);
+     })
 	autoDiv.innerHTML = '';
 });
 /*end of the fetch function of the form on submit*/
@@ -68,65 +72,48 @@ searchInput.addEventListener('keyup', ()=>{
 /*end of the auto fill fucntion of the form element*/
 
 
-
-/* this is the code to make the nav bar appear and disapperf at screen size 800px*/
-
-let media = window.matchMedia('(max-width:800px)');
-
-navContainer.addEventListener('click', ()=>{
-
-	if(media.matches){
-		 link.forEach((aTag)=>{
-  		aTag.style.display = 'block';
-});
-
-}
-});
-
-navContainer.addEventListener('dblclick', ()=>{
-   
-    if (media.matches) {
-    	link.forEach((aTag)=>{
-    		aTag.style.display = 'none';
-    	});
-    }
-    else{
-    	link.forEach((aTag)=>{
-    		aTag.style.display = 'block';
-    	});
-    }
-
-});
-
-/* end of the code section ofr the nav bar*/ 
-
 /*code section ofr te media sceen at max-width 800px */
-document.getElementById('burger').addEventListener('click', ()=>{
+document.getElementById('show').addEventListener('click', ()=>{
   
  if(media.matches){
     let link = document.querySelectorAll('.links');
         link.forEach((a)=>{
         a.style.display = 'block';
-      
-      
-  
     });
-    document.getElementById('burger').innerHTML = '&#10005';  
+    document.getElementById('show').style.display = 'none';
+    document.getElementById('changed').style.display = 'block';  
    }
   
 });
 
 
-document.getElementById('burger').addEventListener('dblclick', ()=>{
+document.getElementById('changed').addEventListener('click', ()=>{
   if(media.matches){
     let link = document.querySelectorAll('.links');
     link.forEach((a)=>{
       a.style.display = 'none';
     });
-    document.getElementById('burger').innerHTML = '&#9776;';
-    document.getElementById('burger').style.color = 'tomatoes'; 
+    document.getElementById('show').style.display = 'block';
+    document.getElementById('changed').style.display = 'none'; 
   }
   
 });
 
 /*end of the media screen of the screeen less then 800px*/
+
+/*section for the background slider*/
+setInterval(slider, 8000);
+ 
+function slider(){
+  let slid = document.querySelector('#slider');
+  slid.style.width = '-200%';
+  setInterval(slider2, 8500);
+}
+
+function slider2(){
+  let slid = document.querySelector('#slider');
+  slid.style.width = '100%';
+  setInterval(slider, 8400);
+}
+
+/*end of the section for slider*/
