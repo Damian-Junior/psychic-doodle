@@ -1,8 +1,10 @@
+/*export let header2 = document.querySelector('h2');*/
 let price = document.getElementById('unit_price');
 let total = document.getElementById('total');
 let selectTag = document.querySelector('select');
 let media = window.matchMedia('(min-width: 300px) and (max-width: 800px)');
-   
+let head = document.getElementsByTagName('HEAD')[0];
+  
   document.getElementById('addCart').addEventListener('click', ()=>{
   document.getElementById('form').style.display = 'block';
   document.getElementById('main_container').style.opacity = '0.3';
@@ -24,10 +26,35 @@ document.getElementById('submit_response').style.display = 'none';
 document.getElementById('main_container').style.opacity = '1';
 document.getElementById('main_container').style.transform = 'scale(1)';
 });
+
 total.innerHTML = 15000;
 selectTag.addEventListener('change', ()=>{
 	total.innerHTML = selectTag.value * 15000;
 });
+
+/*code section to load the subscribe form*/
+(function loadSubscribeForm(){
+   let nevDiv = document.createElement('div');
+       nevDiv.id = "subcribe";
+let appendForm = '';
+ appendForm += `
+        <form method="post" action="mailTO: emmydollar98@gmail.com">
+             <h2>Subcribe to our mailing List</h2>  
+            <input type="text" id="fName" name="fName" placeholder="First Name">
+            <input type="text" id="lName" name=lName placeholder=" Last Name">
+            <input type="email" id="email" name="name" placeholder="Email">
+            <button type="submit">Subscribe</button>
+        </form>
+ `;
+ nevDiv.innerHTML = appendForm;
+ document.querySelector('body').appendChild(nevDiv);  
+})();
+
+/*end of the sucbrice from section*/
+
+
+
+
 
 /*code section ofr te media sceen at max-width 800px */
 document.getElementById('show').addEventListener('click', ()=>{
@@ -55,6 +82,18 @@ document.getElementById('changed').addEventListener('click', ()=>{
   }
   
 });
+
+/*document.querySelector('body').addEventListener('click', ()=>{
+  if(media.matches){
+    let link = document.querySelectorAll('.links');
+    link.forEach((a)=>{
+      a.style.display = 'none';
+    });
+    document.getElementById('show').style.display = 'block';
+    document.getElementById('changed').style.display = 'none'; 
+  }
+  
+});*/
 
 /*end of the media screen of the screeen less then 800px*/
 

@@ -81,7 +81,7 @@ body{
   margin-top:20px;
   margin-left:10px;
   margin-right: 0px;
-  background-image: url("images/apple_icon.png");
+  background-image: url("images/favicon.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -120,7 +120,7 @@ a img{
 }
 
 
-form{
+.food_container form{
 	width: 70%;
 	margin:40px auto;
 	border-radius: 20px;
@@ -134,11 +134,11 @@ form{
 	font-size:1.1em;
 }
 .autofill div:hover{
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(0, 0, 0, 0.01);
 }
 #search_input{
 	font-size:1.5em;
-	background-color:rgba(20,20,20, 0.1);
+	background-color:whitesmoke;
 	width:100%;
 	outline:none;
 	border:none;
@@ -274,7 +274,7 @@ form{
 	height: 100%;
 	margin-bottom: 10px;
 	margin-right:10px;
-	background-color:background-color:rgba(9,3,25, 0.5);;
+	background-color:rgba(9,3,25, 0.5);
 	box-shadow: 1px 2px 3px #ccc;
 
 }
@@ -284,7 +284,7 @@ form{
 	font-size:1.2em;
 }
 .aside h3{
-	margin-bottom: 10px
+	margin-bottom: 10px;
 	color:whitesmoke;
 }
 
@@ -362,7 +362,7 @@ text-align: justify;
   background-color:whitesmoke;
  
 }
-form label{
+ #form label{
   display: block;
   margin-bottom:20px;
   width: 80%;
@@ -372,11 +372,11 @@ form label{
   box-shadow: 0px 0px 5px lightgray;
   color:orange;
 }
-form label:hover{
+#form label:hover{
   color:white;
   background-color: orange;
 }
-form  button[type="submit"]{
+#form button[type="submit"]{
   color:orange;
   font-size:2em;
   padding:20px;
@@ -389,7 +389,7 @@ form  button[type="submit"]{
   border:none;
   outline:none;
 }
-form button[type="submit"]:hover{
+#form button[type="submit"]:hover, #subcribe button:hover{
   color:whitesmoke;
   background-color: orange;
 }
@@ -430,7 +430,50 @@ form button[type="submit"]:hover{
    cursor: pointer;
    display: none;
 }
+/* subcribtion styling */
+#subcribe {
+	width:100%;
+	margin:auto;
+	margin-top:100px;
 
+}
+#subcribe form {
+	background-color: rgba(255, 165, 0, 0.5);
+	width:50%;
+	padding:20px;
+	margin:auto;
+}
+
+#subcribe input{
+	border:none;
+	display:block;
+	font-family: 'helvetica';
+	margin:auto;
+	padding:20px;
+	width:80%;
+	margin-bottom:20px;
+	font-size:1.3em;
+	border-radius: 4px;
+	outline:none; 
+	
+}
+#subcribe button{
+	width:20%;
+	margin-left:40px;
+	font-size:1.2em;
+	padding:20px;
+	outline:none;
+	border-radius: 10px;
+	background-color:white;
+	color:orange;
+
+}
+
+#subcribe h2{
+	width:100%;
+	margin-bottom: 20px;
+	color:whitesmoke;
+}
 
 
 
@@ -623,8 +666,8 @@ form{
 	order:2;
 }
 
-form  button[type="submit"]{
-	width:100%;
+#form button[type="submit"], #subcribe button, {
+	width:80%;
 }
 /*end of section for the food info pages*/ 
 

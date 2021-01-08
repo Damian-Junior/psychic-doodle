@@ -10,45 +10,51 @@ let index = 0;
 let allFoods = ['chicken', 'bread', 'pizza', 'rice', 'beans', 'yam']; 
 let viewButtom = document.querySelectorAll('.view_button');
 let media = window.matchMedia('(min-width: 300px) and (max-width: 800px)');
+
 /*end of the varaible declaration*/
 
 
 /*function for the fetching of the foos from the json file*/ 
-formContainer.addEventListener('submit', (event)=>{
-	event.preventDefault();
-   let userChoice = searchInput.value;
-	fetch('photoInfo.json')
-	.then(response => response.json())
-	.then((data) =>{
-		let genHTML = '';
+formContainer.addEventListener('submit', loadJson);
+/*end of the fetch function of the form on submit*/
 
-	 data.filter((choice) =>{
-		if(choice.Food_Type.toLowerCase() == userChoice.toLowerCase() && userChoice != '')
-		return choice;      // this filter fuction helps to select the file that has the food type that mathceswith user selection and returns the new array
+ function loadJson(event){
+   event.preventDefault();
+   let userChoice = searchInput.value;
+  fetch('photoInfo.json')
+  .then(response => response.json())
+  .then((data) =>{
+    let genHTML = '';
+
+   data.filter((choice) =>{
+    if(choice.Food_Type.toLowerCase() == userChoice.toLowerCase() && userChoice != '')
+    return choice;      // this filter fuction helps to select the file that has the food type that mathceswith user selection and returns the new array
 
   }).map((result) =>{
+
             genHTML += 
             `<div class="foods">
                  <img src="${result.url}" class= "foodimages">
                  <div class="food_info">
                      <p class="title">${result.title}</p>
-                     <a href="${result.foodUrl}" target="_blank " class="view_button">View recipe</a>
+                    <a href="${result.foodUrl}" target="_blank" class="view_button">View Recipe</a>
                  </div>
                  <p class="item_data">Calory: ${result.calory}</p>
                  <p class="item_data">Diet_Label: 1</p>
                  <p class="item_data">Health_Label: ${result.health_label}</p>   
              </div>
-            `
-		 });
-		 foodContainer.innerHTML = genHTML;
-	      
-		 }).catch((error)=>{
+            `;
+
+        
+     });
+     foodContainer.innerHTML = genHTML;
+        
+     }).catch((error)=>{
       alert('food not found: Reason:'+ error);
      })
-	autoDiv.innerHTML = '';
-});
-/*end of the fetch function of the form on submit*/
+  autoDiv.innerHTML = '';
 
+}
 
 /*function for the autofill action of the form elemeent*/
 
@@ -99,6 +105,7 @@ document.getElementById('changed').addEventListener('click', ()=>{
   
 });
 
+
 /*end of the media screen of the screeen less then 800px*/
 
 /*section for the background slider*/
@@ -116,4 +123,4 @@ function slider2(){
   setInterval(slider, 8400);
 }
 
-/*end of the section for slider*/
+/* end of the section for slider  */
