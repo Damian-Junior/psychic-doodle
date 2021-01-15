@@ -1,39 +1,40 @@
     <!DOCTYPE html>
  <html>
  <head>
-   <title>yam profile</title>
+   <title>beans profile</title>
    <meta charset="utf-8">
    <meta name="Author" content="Damian Mmadumere">
    <meta name="description" content="get all your delicious recipe here">
    <meta name="keyword" content="Food, Meal, cook, chicken">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="robot" content="no-index no-follow">
-   <link rel="stylesheet" type="text/css" href="../restaurant.css">
+   <link rel="stylesheet" type="text/css" href="restaurant.css">
  </head>
- <body>
+ <body id="body">
         <div class="nav_container">
            <div class="logo"></div><h1>RECIPE APP</h1>
            <span class="burger"  id="show">&#9776;</span>
            <span class ="burger" id="changed" style="display: none">&#10005;</span>
-            <a href="#articles" class="links"><img src="../images/articleIcon.png "><br>Articles</a> 
-           <a href="#videos" class="links"><img src="../images/videoIcon.jpg " ><br>Videos</a>
-           <a href="#newsLetter" class="links"><img src="../images/newsLetterIcon.jpg "><br>NewsLetter</a>
-           <a href="#guides" class="links"><img src="../images/guideIcon.png "><br>Guides</a>
-           <a href="#books" class="links"><img src="../images/bookIcon.jpg " ><br>Books</a>
-           <a href="#accout" class="links"><img src="../images/articleIcon.png "><br>Account</a>
+            <a href="#articles" class="links"><img src="images/articleIcon.png "><br>Articles</a> 
+           <a href="#videos" class="links"><img src="images/videoIcon.jpg " ><br>Videos</a>
+           <a href="#newsLetter" class="links"><img src="images/newsLetterIcon.jpg "><br>NewsLetter</a>
+           <a href="#guides" class="links"><img src="images/guideIcon.png "><br>Guides</a>
+           <a href="#books" class="links"><img src="images/bookIcon.jpg " ><br>Books</a>
+           <a href="#accout" class="links"><img src="images/articleIcon.png "><br>Account</a>
          
    </div>
-    <div id="slider">
-      
-    </div>
+   <div id="slider">
+     
+   </div>
+
    <div id="main_container">
         <div class="desc_scetion">
-              <h3>Yam</h3>
-        <h1>Name of chicken</h1>
+              <h3>beans</h3>
+        <h1 id='food_title'>Name of chicken</h1>
         <p class="chicken_Descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <img src="../images/yam8.jpg">
+        <img id="image" src="images/beans2.jpg">
 
         <p class="chicken_Descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -42,30 +43,30 @@
         <div class="aside">
          <h3 style="color: whitesmoke; margin-bottom: 10px; text-align: center;">Popular recipe</h3>
          <div class="recip_decp">
-            <img src="../images/yam2.jpg" id="displayImage">
+            <img src="images/beans2.jpg" id="displayImage">
             <span class="recipe_name">The best chicken parosa in world</span>
          </div>
 
          <div class="recip_decp">
-            <img src="../images/yam3.jpg">
+            <img src="images/beans3.jpg">
             <span class="recipe_name">The best chicken parosa in world</span>
          </div>
 
          <div class="recip_decp">
-            <img src="../images/yam4.jpg">
+            <img src="images/beans4.jpg">
             <span class="recipe_name">The best chicken parosa in world</span>
          </div>
          <div class="recip_decp">
-            <img src="../images/yam5.jpg">
+            <img src="images/beans5.jpg">
             <span class="recipe_name">The best chicken parosa in world</span>
          </div>
          <div class="recip_decp">
-            <img src="../images/yam7.jpg">
+            <img src="images/beans7.jpg">
             <span class="recipe_name">The best chicken parosa in world</span>
          </div>
 
          <div class="recip_decp">
-            <img src="../images/yam9.jpg">
+            <img src="images/beans9.jpg">
             <span class="recipe_name">The best chicken parosa in world</span>
          </div>
         </div>
@@ -96,11 +97,8 @@
             <li>Pour your chickned and eat them the way you want</li>
          </ol>
         </div>
-          <!-- subscribe section of the page -->
-          </div>
-
    </div>
-    
+   </div>
       <!--section for order form -->  
 
   <form id="form">
@@ -108,7 +106,7 @@
       <label>Name of Chicken</label>
       <label>Unit Price: <span>15000</span></label>
       <label>Quantity
-      <select>
+      <select >
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -122,10 +120,13 @@
      
   </form>
 
-  <div id="submit_response"><span style="padding-bottom: 20px; font-size:1.5em">Summitted Succesful <span style=" font-size: 2em">&#10004;</span></span>
+    <div id="submit_response"><span style="padding-bottom: 20px; font-size:1.5em">Summitted Succesful <span style=" font-size: 2em">&#10004;</span></span>
       <button type="button" id="ok_button">Ok</button>
   </div>
+
 <!-- end of section for order form -->
+  
+ <script type="text/javascript" src="foods.js" defer="true"></script>
    
- <script type="text/javascript" src="../foods.js" defer="true"></script> </body>
+ </body>
  </html>
