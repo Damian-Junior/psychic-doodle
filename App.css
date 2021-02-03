@@ -37,8 +37,12 @@ h1{
   width:50%;
   margin-left: 28%;
   max-height: 64%;
+  text-align: center;
+  color:#8f4008;
   border-radius: 10px;
-  
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 .items{
 
@@ -58,7 +62,7 @@ h1{
   color:#8f4008;
   font-family: cursive;
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 1.5em !important;
 }
 .editButton{
   position: absolute;
@@ -86,9 +90,9 @@ h1{
   color:white;
 }
 
-#add, #update{
+#add{
   position: absolute;
-  top:30.4%;
+  top:32.4%;
   background-color: #8f4008;
   color:white;
   font-size: 1.2em;

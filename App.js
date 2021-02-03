@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import uuid from 'react-uuid';
 import './App.css';
-let editid = '';   
+let editid = '';  
+
 const  App =  ()=>{
 
 const [visible, setVisible] = useState(true); 
@@ -9,31 +10,38 @@ const [name, setName] = useState('');
 const [list, setList] = useState([]);
 
 // set the name to the value
-const handleIput = event =>{
+const handleIput = event => {
   setName(event.target.value);
 }
 // add the value to the list
-function submitValue(){
-  setList([
-    ...list,
-      {name, id: uuid()}
-  ]);
-// reset the name to empty
-setName('');
-
+const submitValue = ()=>{
+  
+  if (name !== '') {
+      setList([
+      ...list,
+        {name, id: uuid()}
+    ]);
+  // reset the name to empty
+  setName('');
+  
+  }
+   
 }
 // delete an item from the list 
-const removeItem = (event)=>{
-     const updatedList = list.filter(item => item.id !== event.target.id);
-     setList(updatedList);
-     setVisible(true);
-  }
+const removeItem = (event)=> {
+  const updatedList = list.filter(item => item.id !== event.target.id);
+  setList(updatedList);
+  setVisible(true);
+}
 // get and store the id of the item to be edited
 const edit = (id)=> {
-  const editItem = list.filter(item => item.id === id)
-  setName(editItem[0].name)
-  editid = editItem[0].id;
-  setVisible(false);
+  const editItem = list.find(item => item.id === id)
+  setName(editItem.name)
+  editid = editItem.id;
+  if (!visible){
+    setName('');
+  }
+setVisible(!visible);
 
 }
 //change the name of the eidted item
@@ -49,10 +57,9 @@ const updateState = ()=>{
          <input type="text" value={name} name="item" placeholder = "Enter an activity here..." onChange = {handleIput}
             id = "input" autoFocus ></input>
          
-         <button onClick = {submitValue} id="add" style = {{display: visible? 'block':'none'}}>Add</button>
-          <button onClick ={updateState} id="update" style = {{display: visible? 'none':'block'}}>update</button>
+         <button onClick = {visible ? submitValue: updateState } id="add" >{visible ? 'Add': 'update'}</button>
           <ul id = "itemBox">
-           {list.map((item, idx)=>{
+           {list.length === 0 ? 'NO TODO ADDED YET': list.map((item, idx)=>{
              return (
                <li key= {item.id} className = "items" >{(item.name)} 
                <button  onClick = {()=>edit(item.id)} className ="editButton"> &#9998;</button>
@@ -60,6 +67,7 @@ const updateState = ()=>{
                </li>
              )
            })}
+
           </ul>
          </div>
           
